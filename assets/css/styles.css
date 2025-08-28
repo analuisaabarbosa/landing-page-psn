@@ -1,0 +1,29 @@
+.search-input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-input-wrapper .search-icon {
+    position: absolute;
+    left: 0.8rem;
+    color: #FFFFFF;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.search-input-wrapper .form-control-search {
+    padding-left: 2.5rem;
+    background: #B8C2CE;
+    border: none;
+    color: #FFFFFF;
+}
+
+.search-input-wrapper .form-control.form-control-search:focus {
+    border: none;              
+    box-shadow: none;
+}
+
+.search-input-wrapper .form-control-search::placeholder {
+    color: #FFFFFF;
+}
