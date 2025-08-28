@@ -105,6 +105,12 @@
     font-family: 'DM Sans', sans-serif;
     color: #FFFFFF;
     cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-section .card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
 .hero-section .card .card-text {
@@ -118,4 +124,27 @@
 .hero-section .card-img-overlay {
     background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0) 50%);
     border-radius: 1rem; 
+}
+
+.accessories-phrase {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+.accessory-card {
+    background: #EBEEF3;
+    height: 200px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.accessory-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.accessory-card img {
+    max-height: 100%;
+    object-fit: contain;
 }
