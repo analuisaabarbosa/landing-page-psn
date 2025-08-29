@@ -5,10 +5,12 @@
     --color-primary-blue-hover: #1766D1;
     --color-light-blue: #0A48CC;
     --color-light-bg: #D6ECFFCC;
-    --color-search-bg: #B8C2CE;
+    --color-bg: #EBEEF3;
     --color-dark-gradient: #262626;
-    --color-light-gradient: #b8c2ce;
+    --color-light-gradient: #B8C2CE;
     --color-white: #FFFFFF;
+    --pagination-hover-bg: #ced4da;
+    --pagination-next-hover-bg: #343a40;
     --card-hover-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     --card-hover-transform: translateY(-5px);
     --default-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -27,7 +29,7 @@ body {
 
 nav .input-group .form-control-search,
 nav .input-group .input-group-text {
-    background: var(--color-search-bg);
+    background: var(--color-light-gradient);
     color: var(--color-white);
 }
 
@@ -86,7 +88,7 @@ nav .form-control-search::placeholder {
 }
 
 .accessories-section .accessory-card {
-    background: #EBEEF3;
+    background: var(--color-bg);
     height: 200px;
 }
 
@@ -123,6 +125,40 @@ nav .form-control-search::placeholder {
     width: 150px;
     height: 80px;
     object-fit: cover;
+}
+
+.carousel-banner-bg {
+    background: url('../imgs/ffxvi-banner.png') no-repeat center center / cover;
+}
+
+.pagination-custom .page-link {
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-bg);
+    color: var(--color-dark-gradient);
+}
+
+.pagination-custom .page-item.active .page-link {
+    background: var(--color-dark-gradient);
+    color: var(--color-white)
+}
+
+.pagination-custom .page-item.disabled .page-link {
+    background: var(--color-bg);
+    color: var(--color-white);
+}
+
+.pagination-custom .page-item:last-child .page-link {
+    background-color: var(--color-dark-gradient);
+    color: var(--color-white);
+}
+
+.pagination-custom .page-item:not(.active):not(.disabled) .page-link:hover {
+    background-color: var(--pagination-hover-bg); 
+}
+
+.pagination-custom .page-item:last-child:not(.disabled) .page-link:hover {
+    background-color: var(--pagination-next-hover-bg);
 }
 
 .text-gradient {
