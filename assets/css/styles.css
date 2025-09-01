@@ -72,8 +72,9 @@ nav .form-control-search::placeholder {
     background: var(--color-primary-blue);
 }
 
-.nav-link:focus, .input-group:focus-within, .page-link:focus {
-    outline: 2px solid var(--color-dark-gradient);
+.nav-link:focus, .input-group:focus-within, .page-link:focus, .footer-bottom a:focus {
+    outline: 1px solid var(--color-dark-gradient);
+    border-radius: 5px;
 }
 
 .btn-hero:focus {
@@ -154,7 +155,8 @@ nav .form-control-search::placeholder {
 
 .pagination-custom .page-item.active .page-link {
     background: var(--color-dark-gradient);
-    color: var(--color-white)
+    color: var(--color-white);
+    cursor: default;
 }
 
 .pagination-custom .page-item.disabled .page-link {
@@ -173,6 +175,40 @@ nav .form-control-search::placeholder {
 
 .pagination-custom .page-item:last-child:not(.disabled) .page-link:hover {
     background-color: var(--pagination-next-hover-bg);
+}
+
+.newsletter-banner {
+    background: var(--color-bg);
+}
+
+.newsletter-banner::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: 66px;
+    width: 150px;
+    height: 150px;
+    background-image: url('../icons/psn-icon.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.1;
+    z-index: 0;
+}
+
+.newsletter-banner .row {
+    position: relative;
+    z-index: 1;
+}
+
+.newsletter-input {
+    background: transparent;
+    color: var(--color-dark-gradient);
+    opacity: 0.8;
+}
+
+.newsletter-input:focus {
+    background: transparent;
+    color: var(--color-dark-gradient);
 }
 
 .text-gradient {
