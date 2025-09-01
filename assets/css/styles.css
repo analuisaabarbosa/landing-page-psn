@@ -72,6 +72,15 @@ nav .form-control-search::placeholder {
     background: var(--color-primary-blue);
 }
 
+.nav-link:focus, .input-group:focus-within, .page-link:focus {
+    outline: 2px solid var(--color-dark-gradient);
+}
+
+.btn-hero:focus {
+    background: var(--color-primary-blue);
+    outline: 2px solid var(--color-dark-gradient);
+}
+
 .btn-hero:hover {
     background: var(--color-primary-blue-hover);
 }
@@ -89,7 +98,6 @@ nav .form-control-search::placeholder {
 
 .accessories-section .accessory-card {
     background: var(--color-bg);
-    height: 200px;
 }
 
 .accessory-card .card-body h4 {
@@ -97,9 +105,15 @@ nav .form-control-search::placeholder {
     font-weight: 800;
 }
 
-.accessory-card img {
-    max-height: 100%;
-    object-fit: contain;
+.accessories-section .accessory-card {
+    height: 200px !important; 
+}
+
+.accessories-section figure.accessory-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+    padding: 1rem;
 }
 
 .highlight-news li, .featured-card, .hero-section .card {
