@@ -50,6 +50,7 @@ O objetivo foi praticar habilidades de desenvolvimento front-end, focando na fid
 - **Front-end:**
   - `HTML5`
   - `Bootstrap 5`
+  - `CSS3`
 - **Servidor Web e Deploy:**
   - `Nginx`
   - `Docker`
