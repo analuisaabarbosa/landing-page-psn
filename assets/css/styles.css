@@ -1,0 +1,233 @@
+:root {
+    --font-primary: 'DM Sans', sans-serif;
+    --font-secondary: 'Montserrat', sans-serif;
+    --color-primary-blue: #0F3F99;
+    --color-primary-blue-hover: #1766D1;
+    --color-light-blue: #0A48CC;
+    --color-light-bg: #D6ECFFCC;
+    --color-bg: #EBEEF3;
+    --color-dark-gradient: #262626;
+    --color-light-gradient: #B8C2CE;
+    --color-white: #FFFFFF;
+    --pagination-hover-bg: #ced4da;
+    --pagination-next-hover-bg: #343a40;
+    --card-hover-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    --card-hover-transform: translateY(-5px);
+    --default-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url('../fonts/DMSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: var(--font-primary);
+}
+
+nav .input-group .form-control-search,
+nav .input-group .input-group-text {
+    background: var(--color-light-gradient);
+    color: var(--color-white);
+}
+
+nav .form-control-search::placeholder {
+    color: var(--color-white);
+    opacity: 0.8;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    z-index: 0; 
+    background: url('../imgs/ps5-logo.png') no-repeat center center / contain;
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-phrase {
+    font-family: var(--font-secondary);
+    font-size: 5rem;
+    line-height: 75px;
+}
+
+.hero-text {
+    font-size: 1.125rem;    
+}
+
+.btn-hero {
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.2em;
+    background: var(--color-primary-blue);
+}
+
+.nav-link:focus, .input-group:focus-within, .page-link:focus, .footer-bottom a:focus {
+    outline: 1px solid var(--color-dark-gradient);
+    border-radius: 5px;
+}
+
+.btn-hero:focus {
+    background: var(--color-primary-blue);
+    outline: 2px solid var(--color-dark-gradient);
+}
+
+.btn-hero:hover {
+    background: var(--color-primary-blue-hover);
+}
+
+.hero-section .badge-custom {
+    background: var(--color-light-bg);
+    color: var(--color-light-blue);
+    font-size: 1.25rem;
+    cursor: default;
+}
+
+.accessories-section .accessories-phrase {
+    font-size: 1.75rem;
+}
+
+.accessories-section .accessory-card {
+    background: var(--color-bg);
+}
+
+.accessory-card .card-body h4 {
+    font-family: var(--font-secondary);
+    font-weight: 800;
+}
+
+.accessories-section .accessory-card {
+    height: 200px !important; 
+}
+
+.accessories-section figure.accessory-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+    padding: 1rem;
+}
+
+.highlight-news li, .featured-card, .hero-section .card {
+    cursor: pointer;
+}
+
+.highlight-news li img {
+    width: auto;
+    height: 8rem;
+}
+
+.featured-card {
+    background: url('../imgs/gtavi-card.png') no-repeat center center / cover;
+    min-height: 450px;
+}
+
+.badge-news {
+    font-size: 1.25rem;
+    padding: 0.4rem 0.8rem;
+}
+
+.news-thumbnail {
+    width: 150px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.carousel-banner-bg {
+    background: url('../imgs/ffxvi-banner.png') no-repeat center center / cover;
+}
+
+.pagination-custom .page-link {
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-bg);
+    color: var(--color-dark-gradient);
+}
+
+.pagination-custom .page-item.active .page-link {
+    background: var(--color-dark-gradient);
+    color: var(--color-white);
+    cursor: default;
+}
+
+.pagination-custom .page-item.disabled .page-link {
+    background: var(--color-bg);
+    color: var(--color-white);
+}
+
+.pagination-custom .page-item:last-child .page-link {
+    background-color: var(--color-dark-gradient);
+    color: var(--color-white);
+}
+
+.pagination-custom .page-item:not(.active):not(.disabled) .page-link:hover {
+    background-color: var(--pagination-hover-bg); 
+}
+
+.pagination-custom .page-item:last-child:not(.disabled) .page-link:hover {
+    background-color: var(--pagination-next-hover-bg);
+}
+
+.newsletter-banner {
+    background: var(--color-bg);
+}
+
+.newsletter-banner::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: 66px;
+    width: 150px;
+    height: 150px;
+    background-image: url('../icons/psn-icon.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.1;
+    z-index: 0;
+}
+
+.newsletter-banner .row {
+    position: relative;
+    z-index: 1;
+}
+
+.newsletter-input {
+    background: transparent;
+    color: var(--color-dark-gradient);
+    opacity: 0.8;
+}
+
+.newsletter-input:focus {
+    background: transparent;
+    color: var(--color-dark-gradient);
+}
+
+.text-gradient {
+    background: linear-gradient(to bottom, var(--color-dark-gradient), var(--color-light-gradient));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.card-img-overlay {
+    background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0) 50%);
+    border-radius: 1rem; 
+}
+
+.card-lift-hover {
+    transition: var(--default-transition);
+}
+
+.card-lift-hover:hover {
+    transform: var(--card-hover-transform);
+    box-shadow: var(--card-hover-shadow);
+}

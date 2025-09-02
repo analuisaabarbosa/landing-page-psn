@@ -1,0 +1,102 @@
+@media (min-width: 992px) {
+    .accessories-list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, auto);
+        gap: 1rem; 
+    }
+
+    .accessory-item {
+        display: contents;
+    }
+
+    .acc-headset-txt    { grid-area: 1 / 1; }
+    .acc-dualsense-img  { grid-area: 1 / 2; }
+    .acc-vr-txt         { grid-area: 1 / 3; }
+    .acc-earphones-img  { grid-area: 1 / 4; }
+
+    .acc-headset-img    { grid-area: 2 / 1; }
+    .acc-dualsense-txt  { grid-area: 2 / 2; }
+    .acc-vr-img         { grid-area: 2 / 3; }
+    .acc-earphones-txt  { grid-area: 2 / 4; }
+}
+
+@media (max-width: 991.98px) {
+    .hero-phrase {
+        font-size: 3.5rem;
+        line-height: 1.1;
+        margin-bottom: 1rem;
+    }
+
+    .accessories-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    .accessory-item {
+        width: calc(50% - 0.75rem);
+    }
+
+    .accessory-item div {
+        margin-top: 1rem;
+    }
+
+    .newsletter-banner .col-lg-6 {
+        text-align: center;
+    }
+
+    .newsletter-banner::before {
+        top: 30px;
+        right: 50px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .hero-section::before {
+        display: none;
+    }
+
+    .hero-phrase {
+        font-size: 2.8rem;
+    }
+
+    .btn-hero {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+    }
+
+    .accessory-item {
+        width: 100%; 
+    }
+
+    .highlight-news li a article {
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+
+    .highlight-news .news-thumbnail {
+        width: 100%;   
+        height: auto;
+        margin-bottom: 0.5rem;
+    }
+
+    .carousel-banner-bg .w-lg-50 {
+        width: 100% !important;
+    }
+
+    .carousel-banner-bg > div {
+        padding: 1.5rem !important;
+    }
+    
+    .carousel-banner-bg h2 {
+        font-size: 1rem;
+    }
+
+    .carousel-banner-bg p, .carousel-banner-bg .badge {
+        font-size: 0.825rem;
+    }
+
+    .newsletter-banner::before {
+        display: none;
+    }
+}
